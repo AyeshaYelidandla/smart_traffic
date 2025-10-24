@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Traffic Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🚦 Smart Traffic Management System</h1>
+
+  <div class="container">
+    <!-- Road A -->
+    <div class="signal">
+      <h2>Road A</h2>
+      <div class="lights" id="roadA">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+      </div>
+      <button onclick="detectVehicle('A')">Detect Vehicle</button>
+    </div>
+
+    <!-- Road B -->
+    <div class="signal">
+      <h2>Road B</h2>
+      <div class="lights" id="roadB">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+      </div>
+      <button onclick="detectVehicle('B')">Detect Vehicle</button>
+    </div>
+
+    <!-- Road C -->
+    <div class="signal">
+      <h2>Road C</h2>
+      <div class="lights" id="roadC">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+      </div>
+      <button onclick="detectVehicle('C')">Detect Vehicle</button>
+    </div>
+
+    <!-- Road D -->
+    <div class="signal">
+      <h2>Road D</h2>
+      <div class="lights" id="roadD">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+      </div>
+      <button onclick="detectVehicle('D')">Detect Vehicle</button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <h2>System Status</h2>
+    <p id="status">Waiting for sensor input...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
